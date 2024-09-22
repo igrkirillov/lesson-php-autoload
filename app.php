@@ -12,14 +12,14 @@ spl_autoload_register("namespaceAutoload");
 use Human\Student as Student;
 use Technics\Device\TV as TV;
 
-$tvSamsung = new TV(32, "32VNC", "Samsung");
-$tvSony = new TV(65, "65TC", "Sony");
+$samsungTv = new TV(32, "32VNC", "Samsung");
+$sonyTv = new TV(65, "65TC", "Sony");
 
-$studentMe = new Student("Игорь Кириллов", 37);
-$studentMyFriend = new Student("Вася Иванов", 22);
+$meStudent = new Student("Игорь Кириллов", 37);
+$myFriendStudent = new Student("Вася Иванов", 22);
 
-logTVInfo($tvSamsung);
-logTVInfo($tvSony);
+logTVInfo($samsungTv);
+logTVInfo($sonyTv);
 
 function logTVInfo(TV $tv): void
 {
